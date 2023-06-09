@@ -5,14 +5,14 @@ import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
 
 export default function Form() {
-const dispatch = useDispatch();
+    const dispatch = useDispatch();
   
-  const handleSubmit = evt => {
-    evt.preventDefault();
-    const form = evt.target;
-    dispatch(addContact(form.elements.name.value));
-    form.reset();
-  }
+    const handleSubmit = evt => {
+      evt.preventDefault();
+      const form = evt.target;
+      dispatch(addContact(form.elements.name.value));
+      form.reset();
+    }
   
     return (
         <form onSubmit={handleSubmit}>

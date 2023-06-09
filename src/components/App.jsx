@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import Form from './Form/Form';
 import ContactsList from './ContactsList/ContactsList';
 import Filter from './Filter/Filter';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {

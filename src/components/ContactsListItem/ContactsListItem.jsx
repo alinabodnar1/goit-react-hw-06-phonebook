@@ -11,6 +11,9 @@ export default function ContactsListItem({contact}){
     const handleDelete = () => dispatch(deleteContact(contact.id));
     return (
         <List key={contact.id}>
+            <span>{contact.name}</span> {' '}
+            <span>{contact.number}</span> {' '}
+            
             <Button 
                 variant="outlined"
                 type="button"
@@ -29,6 +32,4 @@ ContactsListItem.propTypes = {
             name: PropTypes.string.isRequired,
             number: PropTypes.string.isRequired,    
         }).isRequired,
-    onDelete: PropTypes.func.isRequired,
-    onEdit: PropTypes.func.isRequired,
 }
