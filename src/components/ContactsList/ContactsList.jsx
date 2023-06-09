@@ -4,11 +4,11 @@ import { useSelector } from 'react-redux';
 
 export default function ContactsList() {
     const contacts = useSelector(state => state.contacts);
-    const currentFilter = useSelector(state => state.filter);
+    // const currentFilter = useSelector(state => state.filter);
     
-    const visibleContacts = (contacts, currentFilter) => {
-        return contacts.filter(contact => contact.toLowerCase().trim().includes(currentFilter));
-    }
+    // const visibleContacts = (contacts, currentFilter) => {
+    //     return contacts.filter(contact => contact.toLowerCase().trim().includes(currentFilter));
+    // }
   
     return (<ul>
             { contacts.map(contact => (
