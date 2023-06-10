@@ -7,7 +7,7 @@ export default function ContactsList() {
     const currentFilter = useSelector(state => state.filter);
     
     const visibleContacts = (contacts, currentFilter) => {
-         contacts.filter(contact => contact.toLowerCase().trim().includes(currentFilter));
+         return contacts.filter(contact => contact.toLowerCase().trim().includes(currentFilter));
     }
   
     return (<ul>
