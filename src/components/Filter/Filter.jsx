@@ -7,9 +7,8 @@ export default function Filter() {
   const dispatch = useDispatch();
   const textFilter = useSelector(state => state.filter);
 
-  function handleFilterChange(textFilter) {
-    // dispatch(changeFilter(evt.target.value));
-     dispatch(changeFilter(textFilter));
+  function handleFilterChange(evt) {
+    dispatch(changeFilter(evt.target.value)); 
   } 
 
   return (
@@ -18,6 +17,7 @@ export default function Filter() {
         label="Filter"
         variant="standard"
         onChange={handleFilterChange}
+        value={textFilter}
       />
   );
 }
