@@ -24,8 +24,6 @@ export default function Form() {
             type="text"
             name="name"
             required
-            // value={name}
-            // onChange={handleChange}
           />
         {' '}
         <TextField
@@ -37,8 +35,6 @@ export default function Form() {
             type="text"
             name="number"
             required
-          //   value={number}
-          // onChange={handleChange}
         />
           {' '}
         <Button
