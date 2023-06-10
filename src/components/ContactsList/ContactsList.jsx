@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 export default function ContactsList() {
     const contacts = useSelector(state => state.contacts);
     const currentFilter = useSelector(state => state.filter);
-    const visibleContacts = (contacts, currentFilter) => {
+    const visibleContacts = () => {
          return contacts.filter(contact => contact.toLowerCase().trim().includes(currentFilter));
     }
     return (<ul>
@@ -19,3 +19,4 @@ export default function ContactsList() {
         </ul>
     )
 }
+
